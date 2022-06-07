@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--============== ICONS ==============-->
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
+
+    <!--============== SWIPER CSS ============= -->
+    <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css" />
+
+    <!--============== CSS ===============-->
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link
+      rel="shortcut icon"
+      type="imagem/x-icon"
+      href="./assets/img/favicon.ico"
+    />
+
+    <title>Portfólio || Sergio Winkelstroter</title>
+  </head>
+  <body>
+    <!--=============== HEADER ===============-->
+    <header class="header" id="header">
+      <nav class="nav container">
+        <a href="#" class="nav__logo">Sergio</a>
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list grid">
+            <li class="nav__item">
+              <a href="#home" class="nav__link active-link">
+                <i class="uil uil-estate nav__icon"></i>
+                Home
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#about" class="nav__link">
+                <i class="uil uil-user nav__icon"></i>
+                Sobre
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#portfolio" class="nav__link">
+                <i class="uil uil-scenery nav__icon"></i>
+                Portfólio
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#contact" class="nav__link">
+                <i class="uil uil-message nav__icon"></i>
+                Contato
+              </a>
+            </li>
+          </ul>
+          <i class="uil uil-times nav__close" id="nav-close"></i>
+        </div>
+
+        <div class="nav__bnts">
+          <!-- Theme change button -->
+          <i class="uil uil-moon change-theme" id="theme-button"></i>
+
+          <div class="nav__toggle" id="nav-toggle">
+            <i class="uil uil-apps"></i>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!--=============== MAIN ===============-->
+    <main class="main">
+      <!--=============== HOME ===============-->
+      <section class="home section" id="home">
+        <div class="home__container container grid">
+          <div class="home__content grid">
+            <div class="home__social">
+              <a
+                href="https://www.linkedin.com/in/sergio-winkelstroter/"
+                target="_blank"
+                class="home__social-icon"
+              >
+                <i class="uil uil-linkedin-alt"></i>
+              </a>
+              <a
+                href="https://github.com/Wink07"
+                target="_blank"
+                class="home__social-icon"
+              >
+                <i class="uil uil-github-alt"></i>
+              </a>
+            </div>
+            <div class="home__img">
+              <img
+                src="./assets/img/home_img.png"
+                alt="Desenho de um homem branco sentado na cadeira utilizando um notebook"
+              />
+            </div>
+
+            <div class="home__data">
+              <h1 class="home__title">Olá, eu sou o Sergio!</h1>
+              <h3 class="home__subtitle">Desenvolvedor Frontend</h3>
+              <a href="#contact" class="button button--flex">
+                Contate-me<i class="uil uil-message button__icon"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="home__scroll">
+            <a href="#about" class="home__scroll-button button--flex">
+              <i class="uil uil-mouse-alt home__scroll-mouse"></i>
+              <span class="home__scroll-name">Scroll down</span>
+              <i class="uil uil-arrow-down home__scroll-arrow"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!--=============== ABOUT ===============-->
+      <section class="about section" id="about">
+        <h2 class="section__title">Sobre mim</h2>
+        <span class="section__subtitle">My introducion</span>
+
+        <div class="about__container container grid">
+          <img
+            src="./assets/img/meu_perfil.jpeg"
+            class="about__img"
+            alt="Selfe de um homem branco com camisa escura"
+          />
+
+          <div class="about__data">
+            <p class="about__description">
+              Meu nome é Sergio Winkelstroter, estou começando minha carreira de
+              desenvolvedor web na parte de Front-end. Já fiz alguns cursos na
+              plataforma da
+              <a target="_blank" href="http://rocketseat.com.br">Rocketseat</a>
+              e no momento estou cursando Sistemas para Internet pela
+              Unicesumar.
+            </p>
+
+            <div class="about__buttons">
+              <a
+                download=""
+                href="./assets/pdf/CV_Sergio.pdf"
+                class="button button--flex"
+              >
+                Baixar currículo<i
+                  class="uil uil-download-alt button__icon"
+                ></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--=============== PORTFOLIO ===============-->
+      <section class="portfolio section" id="portfolio">
+        <h2 class="section__title">Portfolio</h2>
+        <span class="section__subtitle">Most recent work</span>
+        <div class="portfolio__container container swiper mySwiper">
+          <div class="swiper-wrapper">
+            <!--=============== PORTFOLIO 1 ===============-->
+            <div class="portfolio__content grid swiper-slide">
+              <img
+                src="https://user-images.githubusercontent.com/66968264/167510640-cba82357-0154-4220-88a8-c54f3e800edd.jpg"
+                alt=""
+                class="portfolio__img"
+              />
+
+              <div class="portfolio__data">
+                <h3 class="portfolio__title">DoctorCare</h3>
+                <p class="portfolio__description">
+                  DoctorCare é uma página institucional no formato One Page,
+                  responsiva, para usar em diversos tipos de micros, pequenas e
+                  médias empresas.
+                </p>
+                <a
+                  target="_blank"
+                  href="https://wink07.github.io/nlw-return-doctorcare/"
+                  class="button button--flex button--small portfolio__button"
+                >
+                  Demo
+                  <i class="uil uil-arrow-right button__icon"></i>
+                </a>
+              </div>
+            </div>
+            <!--=============== PORTFOLIO 2 ===============-->
+            <div class="portfolio__content grid swiper-slide">
+              <img
+                src="https://s2.glbimg.com/2_QWPzvhTi7jg6XWwbww9sImVHg=/0x0:695x391/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_08fbf48bc0524877943fe86e43087e7a/internal_photos/bs/2021/2/o/eXdAksRvOUyNRDRzRV9w/2014-12-03-captura-de-tela-2014-12-03-as-111008.jpg"
+                alt=""
+                class="portfolio__img"
+              />
+
+              <div class="portfolio__data">
+                <h3 class="portfolio__title">Netflix Clone</h3>
+                <p class="portfolio__description">
+                  Projeto desenvolvido em HTML, CSS e JS, consumindo a API do
+                  Themoviedb.org
+                </p>
+                <a
+                  target="_blank"
+                  href="https://wink07.github.io/netflix-clone/"
+                  class="button button--flex button--small portfolio__button"
+                >
+                  Demo
+                  <i class="uil uil-arrow-right button__icon"></i>
+                </a>
+              </div>
+            </div>
+            <!--=============== PORTFOLIO 3 ===============-->
+            <div class="portfolio__content grid swiper-slide">
+              <img
+                src="https://raw.githubusercontent.com/bedimcode/responsive-portfolio-website-Alexa/main/preview.png"
+                alt=""
+                class="portfolio__img"
+              />
+
+              <div class="portfolio__data">
+                <h3 class="portfolio__title">Portfolio Responsive</h3>
+                <p class="portfolio__description">
+                  Site portfólio responsivo usando Html, Css e JS. Com uma bela
+                  interface de usuário.
+                </p>
+                <a
+                  target="_blank"
+                  href="https://wink07.github.io/Responsive-Portfolio/"
+                  class="button button--flex button--small portfolio__button"
+                >
+                  Demo
+                  <i class="uil uil-arrow-right button__icon"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-button-next">
+            <i class="uil uil-angle-right-b swiper-portfolio-icon"></i>
+          </div>
+          <div class="swiper-button-prev">
+            <i class="uil uil-angle-left-b swiper-portfolio-icon"></i>
+          </div>
+
+          <div class="swiper-pagination swiper-pagination-bullets"></div>
+        </div>
+      </section>
+
+      <!--=============== CONTACT ME ===============-->
+      <section class="contact section" id="contact">
+        <h2 class="section__title">Contato</h2>
+        <span class="section__subtitle">Get in touch</span>
+
+        <div class="contact__container container grid">
+          <div>
+            <div class="contact__information">
+              <i class="uil uil-phone contact__icon"></i>
+
+              <div>
+                <h3 class="contact__title">Telefone</h3>
+                <span class="contact__subtitle">(99) 99152-9825</span>
+              </div>
+            </div>
+
+            <div class="contact__information">
+              <i class="uil uil-envelope contact__icon"></i>
+
+              <div>
+                <h3 class="contact__title">Email</h3>
+                <span class="contact__subtitle">winksousa0@gmail.com</span>
+              </div>
+            </div>
+
+            <div class="contact__information">
+              <i class="uil uil-map-marker contact__icon"></i>
+
+              <div>
+                <h3 class="contact__title">Localização</h3>
+                <span class="contact__subtitle"
+                  >Brasil - Açailandia, Maranhão
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!---=============== FOOTER ===============-->
+    <footer class="footer">
+      <div class="footer__bg">
+        <div class="footer__container container grid">
+          <div>
+            <h1 class="footer__title">Sergio</h1>
+            <span class="footer__subtitle">Desenvolvedor Frontend</span>
+          </div>
+
+          <ul class="footer__links">
+            <li>
+              <a href="#about" class="footer__link">Sobre</a>
+            </li>
+            <li>
+              <a href="#portfolio" class="footer__link">Portfolio</a>
+            </li>
+            <li>
+              <a href="#contact" class="footer__link">Contato</a>
+            </li>
+          </ul>
+
+          <div class="footer__socials">
+            <a
+              href="https://wa.me/5599991529825"
+              target="_blank"
+              class="footer__social"
+            >
+              <i class="uil uil-whatsapp"></i>
+            </a>
+
+            <a
+              href="https://www.instagram.com/winkelstrotersergio"
+              target="_blank"
+              class="footer__social"
+            >
+              <i class="uil uil-instagram"></i>
+            </a>
+          </div>
+        </div>
+
+        <p class="footer__copy">&#169;All right reserved</p>
+      </div>
+    </footer>
+
+    <!--=============== SCROLL TOP ===============-->
+    <a href="#" class="scrollup" id="scroll-up">
+      <i class="uil uil-arrow-up scrollup__icon"></i>
+    </a>
+
+    <!------------------  SCROLL REVEAL ------------------>
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!--=============== SWIPER JS ===============-->
+    <script src="./assets/js/swiper-bundle.min.js"></script>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
